@@ -1,33 +1,36 @@
+/*Estilos generales*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
+.margin {
+  width: 100%;
+  padding: 40px 100px;
+}
 /*
 nav bar
 */
-#cabecero{
+#cabecero {
   display: flex;
   position: fixed;
   align-items: center;
   flex-direction: row;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 150px;
-  width: 100%;
-  padding: 40px 100px;
   z-index: 1;
 }
 
-
-#logo{
+#logo {
   font-family: Chau Philomene One;
   color: #2b4ac7;
   font-size: 35px;
   flex-grow: 10;
   font-weight: bold;
 }
-#menu{
+#menu {
   height: 100%;
   font-family: Roboto;
   flex-grow: 2;
@@ -43,61 +46,60 @@ nav bar
   align-content: center;
 }
 
-#menu a{
+#menu a {
   padding: 20px;
   color: #707e95;
 }
 
-.button{
-    font-family: Roboto;
-    background-color: #2b4ac7;
-    border: 0;
-    padding: 15px 25px;
-    border-radius: 5px;
-    color: white;
+.button {
+  font-family: Roboto;
+  background-color: #2b4ac7;
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
 }
 
 /*body images*/
 
-#img-inf{
+#img-inf {
   display: flex;
   position: relative;
 }
-.img-left{
+.img-left {
   height: 700px;
   width: 50%;
 }
-.img-right{
+.img-right {
   height: 700px;
   width: 50%;
 }
-#info{
- position: absolute;
- top: 25%;
- left: 9%;
+#info {
+  position: absolute;
+  top: 25%;
+  left: 9%;
 }
 
-.title{
+.title {
   color: #1f3e72;
   font-size: 40px;
   font-family: Roboto;
   margin-bottom: 25px;
-
 }
 
-.text{
+.text {
   color: #707e95;
+  line-height: 25px;
   font-family: Roboto;
   margin-bottom: 30px;
-
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   align-items: center;
 }
 
-.icon-text{
+.icon-text {
   font-size: 15px;
   padding-left: 15px;
   margin-right: 80px;
@@ -105,24 +107,24 @@ nav bar
   color: #1f3e72;
 }
 
-.icon-container-down{
+.icon-container-down {
   display: flex;
   align-items: flex-start;
-  padding-top: 120px;
+  padding-top: 110px;
 }
 
-.rectangle-box{
+.rectangle-box {
   border-radius: 10px;
   display: flex;
   position: absolute;
   margin-top: 10px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 130px;
   width: 900px;
-  top: 101%;
+  top: 100%;
 }
 
-#data-consult{
+#data-consult {
   padding: 30px 20px;
   order: 1;
   display: flex;
@@ -131,14 +133,14 @@ nav bar
   justify-content: space-around;
 }
 
-.rectangle-icon-text{
+.rectangle-icon-text {
   font-size: 20px;
   margin-right: 62px;
   font-family: Roboto;
   color: #1f3e72;
 }
 
-.rectangle-icon-title{
+.rectangle-icon-title {
   font-size: 15px;
   padding-left: 35px;
   margin-right: 93px;
@@ -146,13 +148,13 @@ nav bar
   color: #707e95;
 }
 
-.container-button{
+.container-button {
   order: 2;
   width: 20%;
   margin-top: 12px;
 }
 
-.rectangle-button{
+.rectangle-button {
   font-family: Roboto;
   background-color: #2b4ac7;
   border: 0;
@@ -164,14 +166,52 @@ nav bar
 
 /*images vaccine*/
 
-#container-vaccines{
-  width: 100%;
+#container-vaccines {
   display: flex;
+  width: 100%;
   padding: 40px 100px;
 }
 
-.logo-vaccines{
+.logo-vaccines {
   height: 100px;
   margin-right: 100px;
   width: 300px;
+}
+
+/*sección why should i vaccine*/
+
+#reasons-vaccines {
+  width: 100%;
+  padding: 40px 100px;
+}
+
+#box-container {
+  display: flex;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+.box {
+  border-radius: 10px;
+  height: 300px;
+  width: 250px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: 2px 2px 2px #2b4ac7;
+  flex-direction: column;
+  padding: 2% 2%;
+}
+.title-box {
+  margin-top: 5%;
+  color: #1f3e72;
+  font-size: 20px;
+  font-family: Roboto;
+  margin-bottom: 5px;
+}
+
+.text-box {
+  margin-top: 5%;
+  color: #707e95;
+  font-size: 16px;
+  font-family: Roboto;
+  margin-bottom: 5px;
 }
