@@ -9,11 +9,14 @@ nav bar
 */
 #cabecero{
   display: flex;
+  position: fixed;
   align-items: center;
   flex-direction: row;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.9);
   height: 150px;
-  padding: 100px;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
 }
 
 
@@ -45,8 +48,6 @@ nav bar
   color: #707e95;
 }
 
-
-
 .button{
     font-family: Roboto;
     background-color: #2b4ac7;
@@ -54,4 +55,121 @@ nav bar
     padding: 15px 25px;
     border-radius: 5px;
     color: white;
+}
+
+/*body images*/
+
+#img-inf{
+  display: flex;
+  position: relative;
+}
+.img-left{
+  height: 700px;
+  width: 50%;
+}
+.img-right{
+  height: 700px;
+  width: 50%;
+}
+#info{
+ position: absolute;
+ top: 25%;
+ left: 9%;
+}
+
+.title{
+  color: #1f3e72;
+  font-size: 40px;
+  font-family: Roboto;
+  margin-bottom: 25px;
+
+}
+
+.text{
+  color: #707e95;
+  font-family: Roboto;
+  margin-bottom: 30px;
+
+}
+
+.icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.icon-text{
+  font-size: 15px;
+  padding-left: 15px;
+  margin-right: 80px;
+  font-family: Roboto;
+  color: #1f3e72;
+}
+
+.icon-container-down{
+  display: flex;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+
+.rectangle-box{
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  background-color: rgba(255,255,255,0.9);
+  height: 130px;
+  width: 900px;
+  top: 101%;
+}
+
+#data-consult{
+  padding: 30px 20px;
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  justify-content: space-around;
+}
+
+.rectangle-icon-text{
+  font-size: 20px;
+  margin-right: 62px;
+  font-family: Roboto;
+  color: #1f3e72;
+}
+
+.rectangle-icon-title{
+  font-size: 15px;
+  padding-left: 35px;
+  margin-right: 93px;
+  font-family: Roboto;
+  color: #707e95;
+}
+
+.container-button{
+  order: 2;
+  width: 20%;
+  margin-top: 12px;
+}
+
+.rectangle-button{
+  font-family: Roboto;
+  background-color: #2b4ac7;
+  border: 0;
+  margin-top: 17%;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: white;
+}
+
+/*images vaccine*/
+
+#container-vaccines{
+  width: 100%;
+  display: flex;
+  padding: 40px 100px;
+}
+
+.logo-vaccines{
+  height: 100px;
 }
