@@ -6,9 +6,23 @@
   text-decoration: none;
 }
 
+.text-big{
+  color: #707e95;
+  font-size: 23px;
+  font-family: Roboto;
+}
+
 .margin {
   width: 100%;
   padding: 40px 100px;
+}
+
+.margin-top{
+  margin-top: 40px
+}
+
+.margin-right{
+  margin-right: 40px;
 }
 /*
 nav bar
@@ -23,7 +37,7 @@ nav bar
   z-index: 1;
 }
 
-#logo {
+.logo {
   font-family: Chau Philomene One;
   color: #2b4ac7;
   font-size: 35px;
@@ -323,12 +337,6 @@ nav bar
 padding-left: 2%;
 }
 
-.text-big{
-  color: #707e95;
-  font-size: 25px;
-  font-family: Roboto;
-}
-
 
 .box-botton-large{
   font-family: Roboto;
@@ -368,4 +376,50 @@ position: relative;
   padding: 15px 55px;
   border-radius: 5px;
   color: white;
+}
+
+/*Footer*/
+
+footer{
+  background-color: #eef3ff;
+  display: flex;
+}
+
+.footer-brand{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.footer-more-info{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.footer-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.box-1{
+  height: 50%;
+}
+
+.footer-brand-terms{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.terms{
+  display: flex;
+  height: 50%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
 }
