@@ -19,7 +19,7 @@ nav bar
   align-items: center;
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.9);
-  height: 150px;
+  height: 120px;
   z-index: 1;
 }
 
@@ -110,14 +110,14 @@ nav bar
 .icon-container-down {
   display: flex;
   align-items: flex-start;
-  padding-top: 110px;
+  padding-top: 95px;
 }
 
 .rectangle-box {
   border-radius: 10px;
   display: flex;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   height: 130px;
   width: 900px;
@@ -142,8 +142,8 @@ nav bar
 
 .rectangle-icon-title {
   font-size: 15px;
-  padding-left: 35px;
-  margin-right: 93px;
+  padding-left: 10px;
+  flex-basis: 28%;
   font-family: Roboto;
   color: #707e95;
 }
@@ -166,15 +166,13 @@ nav bar
 
 /*images vaccine*/
 
-#container-vaccines {
+.container-vaccines {
   display: flex;
-  width: 100%;
-  padding: 40px 100px;
 }
 
 .logo-vaccines {
   height: 100px;
-  margin-right: 100px;
+  margin-right: 50px;
   width: 300px;
 }
 
@@ -195,8 +193,7 @@ nav bar
   height: 300px;
   width: 250px;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.11);
-  box-shadow: 2px 2px 2px #2b4ac7;
+  box-shadow: 2px 2px 5px rgba(31, 62, 114,0.22);
   flex-direction: column;
   padding: 2% 2%;
 }
@@ -215,3 +212,73 @@ nav bar
   font-family: Roboto;
   margin-bottom: 5px;
 }
+
+
+
+/*Preparations Before Vaccine*/
+
+
+.requeriments-vaccines{
+  display: flex;
+}
+#requeriments-info{
+  order: 2;
+  width: 50%;
+  margin-left: 50px;
+}
+
+#requerimets-img{
+  order: 1;
+  width: 50%;
+}
+
+#rectangle-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rectangle{
+  border-radius: 10px;
+  padding-left: 2%;
+  display: flex;
+  box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
+  height: 60px;
+  margin: 5%;
+  width: 500px;
+  align-items: center;
+}
+.rectangle-icon-title-mini {
+  font-size: 15px;
+  padding-left: 35px;
+  flex-basis: 89%;
+  font-family: Roboto;
+  color: #707e95;
+}
+#rectangle-info{
+  border-radius: 10px;
+  padding-top: 2%;
+  padding-left: 2%;
+  display: flex;
+  box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
+  height: 125px;
+  margin: 5%;
+  flex-wrap: wrap;
+  width: 500px;
+  align-items: flex-start;
+}
+
+.text-info-table{
+  padding-right: 1%;
+  margin-top: 1%;
+  color: #707e95;
+  font-size: 16px;
+  font-family: Roboto;
+  margin-bottom: 5px;
+}
+
+#selector-inv{
+  transform: rotate(180deg)
+}
+
+/* sección Emergency contact*/
+

@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <title>Vaccination</title>
   </head>
 
   <body>
@@ -203,7 +204,7 @@
     </div>
 
     <!--Inicio de container-->
-    <div id="container-vaccines">
+    <div class="container-vaccines margin">
       <img
         class="logo-vaccines"
         src="/assets/img/Pfizer_(2021).editiado.png"
@@ -322,25 +323,104 @@
     <!--Fin del container-->
 
     <!--Inicio de container-->
-    <div id="requeriments-vaccines">
-      <h2 class="title">Preparations Before Vaccine</h2>
-      <p></p>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+    <div class="requeriments-vaccines margin">
+      <div id="requeriments-info">
+        <h2 class="title">Preparations Before Vaccine</h2>
+      <p class="text">
+        The success of vaccines is strongly influenced by the
+        strength of the body's immune system. Therefore, there area
+        several things that can be tried to make the COVID-19
+        vaccine work : 
+      </p>
+      <div id="rectangle-box">
+        <div class="rectangle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+          </svg>
+          <h2 class="rectangle-icon-title-mini">Avoid alcoholic beverages</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M9 11l3 3l3 -3" />
+          </svg>
+        </div>
+        <div id="rectangle-info">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M10 10l4 4m0 -4l-4 4" />
+          </svg>
+          <h2 class="rectangle-icon-title-mini">Avoid stress</h2>
+            <svg  id="selector-inv" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <path d="M9 11l3 3l3 -3" />
+            </svg>
+          
+              <p class="text-info-table">
+                Stress has a profound on immune work.
+                Moreover, prolonged stress can increase cortisol
+                production and oxidative stress in the body
+              </p>
+           
+        </div>
+        <div class="rectangle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-pie-2" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 3v9h9" />
+            <circle cx="12" cy="12" r="9" />
+          </svg>
+          <h2 class="rectangle-icon-title-mini">Eat healthy food</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M9 11l3 3l3 -3" />
+          </svg>
+        </div>
+        <div class="rectangle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="9 11 12 14 20 6" />
+            <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+          </svg>
+          <p class="rectangle-icon-title-mini">Get enough sleep</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M9 11l3 3l3 -3" />
+          </svg>
+        </div>
+        <div class="rectangle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+          <P class="rectangle-icon-title-mini">Exercise or physical activity</P>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2b4ac7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M9 11l3 3l3 -3" />
+          </svg>
+        </div>
+
+      </div>
+  
+      </div>
+        <img id="requerimets-img" src="/assets/img/pexels-anna-shvets-4167542.jpg" alt="">
+     
     </div>
-    <!--Inicio de container-->
-    <div>
-      <img src="" alt="">
-    </div>
-     <!--Fin del container-->
+   
     <!--Fin del container-->
 
     <!--Inicio de container-->
     <div id="contacts">
-      <h2>Emergency Contact</h2>
-      <p></p>
+      <h2 class="title">Emergency Contact</h2>
+      <p class="text">
+        Contact one of the contacts below if you or your family feel
+        unwell and have similar symptoms such as COVID-19, make
+        sure you also take care of yourself Before reporting to us :
+      </p>
       <img src="" alt="" />
       <div class="inf-contacts"></div>
       <div class="img-doc"></div>
