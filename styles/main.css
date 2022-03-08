@@ -168,6 +168,7 @@ nav bar
 
 .container-vaccines {
   display: flex;
+  justify-content: space-around;
 }
 
 .logo-vaccines {
@@ -282,3 +283,89 @@ nav bar
 
 /* sección Emergency contact*/
 
+.contacts{
+  display: flex;
+ width: 100%;
+}
+
+
+.img-doc{
+  width: 100%;
+}
+
+.botton-grid{
+  display: flex;
+  margin-top: 50%;
+  margin-right: 50%;
+  box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
+  padding: 20px 20px 20px 20px ;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  align-content: center;
+}
+
+.padding-space{
+  margin: 3%;
+}
+
+.container-svg{
+  display: flex;
+    align-items: self-start;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 250px;
+    justify-content: center;
+}
+.svg-text{
+padding-left: 2%;
+}
+
+.text-big{
+  color: #707e95;
+  font-size: 25px;
+  font-family: Roboto;
+}
+
+
+.box-botton-large{
+  font-family: Roboto;
+  background-color: #f1f5ff;
+  border: 0;
+  margin-top: 10px;
+  padding: 15px 55px;
+  border-radius: 5px;
+  color: #2b4ac7;
+}
+
+.button-down{
+position: relative;
+}
+
+.box-contacts{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.cont-text{
+  flex-basis: 50%;
+
+}
+.cont-img-doc{
+  width: 50%;
+}
+
+#box-botton-large-blue{
+  font-family: Roboto;
+  background-color: #2b4ac7;
+  border: 0;
+  margin-top: 10px;
+  padding: 15px 55px;
+  border-radius: 5px;
+  color: white;
+}
