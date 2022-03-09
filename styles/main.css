@@ -12,6 +12,12 @@
   font-family: Roboto;
 }
 
+.text-logo{
+  font-family: Chau Philomene One;
+  color: #2b4ac7;
+  font-size: 35px;
+}
+
 .margin {
   width: 100%;
   padding: 40px 100px;
@@ -38,9 +44,6 @@ nav bar
 }
 
 .logo {
-  font-family: Chau Philomene One;
-  color: #2b4ac7;
-  font-size: 35px;
   flex-grow: 10;
   font-weight: bold;
 }
