@@ -27,8 +27,8 @@
 
 .text-logo {
   font-family: 'Rubik', sans-serif;
-  color: #2b4ac7;
   font-size: 35px;
+  color: #2b4ac7;
 }
 
 .margin {
@@ -66,6 +66,8 @@ nav bar
 .logo {
   flex-grow: 10;
   font-weight: bold;
+  text-decoration: none;
+
 }
 #menu {
   height: 100%;
@@ -308,7 +310,7 @@ nav bar
 .botton-grid {
   display: flex;
   margin-top: 50%;
-  margin-right: 50%;
+  margin-right: 15%;
   box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
   padding: 20px 20px 20px 20px;
   flex-direction: column;
