@@ -6,30 +6,50 @@
   text-decoration: none;
 }
 
-.text-big{
-  color: #707e95;
-  font-size: 23px;
-  font-family: Roboto;
+.layout{
+  display: flex;
 }
 
-.text-logo{
-  font-family: Chau Philomene One;
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.text-big {
+  color: #707e95;
+  font-size: 23px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-logo {
+  font-family: 'Rubik', sans-serif;
   color: #2b4ac7;
   font-size: 35px;
 }
 
 .margin {
-  width: 100%;
   padding: 40px 100px;
 }
 
-.margin-top{
-  margin-top: 40px
+.margin-top {
+  margin-top: 40px;
 }
 
-.margin-right{
+.margin-right {
   margin-right: 40px;
 }
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  color: #1f3e72;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
 /*
 nav bar
 */
@@ -49,7 +69,8 @@ nav bar
 }
 #menu {
   height: 100%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   flex-grow: 2;
 }
 
@@ -69,11 +90,12 @@ nav bar
 }
 
 .button {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   background-color: #2b4ac7;
   border: 0;
   padding: 15px 25px;
   border-radius: 5px;
+  font-size: 15px;
   color: white;
 }
 
@@ -83,44 +105,28 @@ nav bar
   display: flex;
   position: relative;
 }
-.img-left {
+.home-image {
   height: 700px;
   width: 50%;
 }
-.img-right {
-  height: 700px;
-  width: 50%;
-}
+
 #info {
   position: absolute;
   top: 25%;
   left: 9%;
 }
 
-.title {
-  color: #1f3e72;
-  font-size: 40px;
-  font-family: Roboto;
-  margin-bottom: 25px;
-}
-
-.text {
-  color: #707e95;
-  line-height: 25px;
-  font-family: Roboto;
-  margin-bottom: 30px;
-}
-
 .icon-container {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .icon-text {
   font-size: 15px;
   padding-left: 15px;
   margin-right: 80px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color: #1f3e72;
 }
 
@@ -153,7 +159,7 @@ nav bar
 .rectangle-icon-text {
   font-size: 20px;
   margin-right: 62px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color: #1f3e72;
 }
 
@@ -161,7 +167,7 @@ nav bar
   font-size: 15px;
   padding-left: 10px;
   flex-basis: 28%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color: #707e95;
 }
 
@@ -172,7 +178,7 @@ nav bar
 }
 
 .rectangle-button {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   background-color: #2b4ac7;
   border: 0;
   margin-top: 17%;
@@ -190,8 +196,8 @@ nav bar
 
 .logo-vaccines {
   height: 100px;
-  margin-right: 50px;
   width: 300px;
+  margin-right: 50px;
 }
 
 /*sección why should i vaccine*/
@@ -203,59 +209,55 @@ nav bar
 
 #box-container {
   display: flex;
-  padding-right: 5%;
   justify-content: space-between;
+  padding-right: 5%;
 }
 .box {
-  border-radius: 10px;
-  height: 300px;
-  width: 250px;
   display: flex;
-  box-shadow: 2px 2px 5px rgba(31, 62, 114,0.22);
   flex-direction: column;
   padding: 2% 2%;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(31, 62, 114, 0.22);
 }
+
 .title-box {
-  margin-top: 5%;
+  margin: 5% 0 5% 0;
   color: #1f3e72;
   font-size: 20px;
-  font-family: Roboto;
-  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-box {
-  margin-top: 5%;
+  margin: 5% 0 5% 0;
   color: #707e95;
   font-size: 16px;
-  font-family: Roboto;
-  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
 }
-
-
 
 /*Preparations Before Vaccine*/
 
-
-.requeriments-vaccines{
+.requeriments-vaccines {
   display: flex;
 }
-#requeriments-info{
+#requeriments-info {
   order: 2;
   width: 50%;
   margin-left: 50px;
 }
 
-#requerimets-img{
+#requerimets-img {
   order: 1;
   width: 50%;
 }
 
-#rectangle-box{
+#rectangle-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.rectangle{
+.rectangle {
   border-radius: 10px;
   padding-left: 2%;
   display: flex;
@@ -269,80 +271,72 @@ nav bar
   font-size: 15px;
   padding-left: 35px;
   flex-basis: 89%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color: #707e95;
 }
-#rectangle-info{
-  border-radius: 10px;
-  padding-top: 2%;
-  padding-left: 2%;
+#rectangle-info {
   display: flex;
-  box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
-  height: 125px;
-  margin: 5%;
   flex-wrap: wrap;
-  width: 500px;
   align-items: flex-start;
+  width: 500px;
+  height: 125px;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2% 0% 0% 2%;
+  box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
 }
 
-.text-info-table{
+.text-info-table {
   padding-right: 1%;
+  margin: 1% 0% 1% 0%;
   margin-top: 1%;
   color: #707e95;
   font-size: 16px;
-  font-family: Roboto;
-  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
-#selector-inv{
-  transform: rotate(180deg)
+#selector-inv {
+  transform: rotate(180deg);
 }
 
 /* sección Emergency contact*/
 
-.contacts{
+.contacts {
   display: flex;
- width: 100%;
 }
 
-
-.img-doc{
-  width: 100%;
-}
-
-.botton-grid{
+.botton-grid {
   display: flex;
   margin-top: 50%;
   margin-right: 50%;
   box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
-  padding: 20px 20px 20px 20px ;
+  padding: 20px 20px 20px 20px;
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 10px;
   align-content: center;
 }
 
-.padding-space{
+.padding-space {
   margin: 3%;
 }
 
-.container-svg{
+.container-svg {
   display: flex;
-    align-items: self-start;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 150px;
-    width: 250px;
-    justify-content: center;
+  align-items: self-start;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 150px;
+  width: 250px;
+  justify-content: center;
 }
-.svg-text{
-padding-left: 2%;
+.svg-text {
+  padding-left: 2%;
 }
 
-
-.box-botton-large{
-  font-family: Roboto;
+.box-botton-large {
+  font-family: 'Roboto', sans-serif;
   background-color: #f1f5ff;
   border: 0;
   margin-top: 10px;
@@ -351,28 +345,23 @@ padding-left: 2%;
   color: #2b4ac7;
 }
 
-.button-down{
-position: relative;
+.button-down {
+  position: relative;
 }
 
-.box-contacts{
+.box-contacts {
   width: 30%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
 }
 
-.cont-text{
+.cont-text {
   flex-basis: 50%;
-
-}
-.cont-img-doc{
-  width: 50%;
 }
 
-#box-botton-large-blue{
-  font-family: Roboto;
+#box-botton-large-blue {
+  font-family: 'Roboto', sans-serif;
   background-color: #2b4ac7;
   border: 0;
   margin-top: 10px;
@@ -383,45 +372,45 @@ position: relative;
 
 /*Footer*/
 
-footer{
+footer {
   background-color: #eef3ff;
   display: flex;
 }
 
-.footer-brand{
+.footer-brand {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
 }
 
-.footer-more-info{
+.footer-more-info {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-direction: row;
 }
 
-.box-1{
+.box-1 {
   height: 50%;
 }
 
-.footer-brand-terms{
+.footer-brand-terms {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
 }
-.terms{
+.terms {
   display: flex;
   height: 50%;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.footer-column{
+.footer-column {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
