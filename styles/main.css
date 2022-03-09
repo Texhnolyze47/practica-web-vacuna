@@ -6,8 +6,14 @@
   text-decoration: none;
 }
 
-.layout{
+.layout-column {
   display: flex;
+  flex-direction: column;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .width-50 {
@@ -22,12 +28,21 @@
   color: #707e95;
   font-size: 23px;
   line-height: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-logo {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 35px;
+  color: #2b4ac7;
+}
+
+.text-grey {
+  font-family: "Roboto", sans-serif;
+  color: #707e95;
+}
+.text-blue {
+  font-family: "Roboto", sans-serif;
   color: #2b4ac7;
 }
 
@@ -35,16 +50,28 @@
   padding: 40px 100px;
 }
 
+.padding-l20 {
+  padding-left: 20px;
+}
+
+.padding-r20 {
+  padding-right: 20px;
+}
+
+.margin-g {
+  margin: 3%;
+}
+
 .margin-top {
-  margin-top: 40px;
+  margin: 20px;
 }
 
 .margin-right {
-  margin-right: 40px;
+  margin-right: 25px;
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1f3e72;
   font-size: 40px;
   margin-bottom: 25px;
@@ -67,11 +94,10 @@ nav bar
   flex-grow: 10;
   font-weight: bold;
   text-decoration: none;
-
 }
 #menu {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   flex-grow: 2;
 }
@@ -92,7 +118,7 @@ nav bar
 }
 
 .button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #2b4ac7;
   border: 0;
   padding: 15px 25px;
@@ -103,42 +129,33 @@ nav bar
 
 /*body images*/
 
-#img-inf {
-  display: flex;
-  position: relative;
-}
 .home-image {
   height: 700px;
   width: 50%;
 }
 
-#info {
+#text-home-image {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 9%;
 }
 
 .icon-container {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   margin-top: 20px;
-}
-
-.icon-text {
-  font-size: 15px;
-  padding-left: 15px;
-  margin-right: 80px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1f3e72;
 }
 
 .icon-container-down {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 95px;
 }
 
 .rectangle-box {
+  padding: 15px;
   border-radius: 10px;
   display: flex;
   position: absolute;
@@ -149,28 +166,20 @@ nav bar
   top: 100%;
 }
 
-#data-consult {
-  padding: 30px 20px;
-  order: 1;
+table {
   display: flex;
-  flex-wrap: wrap;
-  width: 85%;
-  justify-content: space-around;
+  flex-direction: row;
+  width: 81%;
 }
 
-.rectangle-icon-text {
-  font-size: 20px;
-  margin-right: 62px;
-  font-family: 'Roboto', sans-serif;
-  color: #1f3e72;
+th {
+  display: inline-flex;
+  padding: 20px 92px 17px 15px;
 }
-
-.rectangle-icon-title {
-  font-size: 15px;
-  padding-left: 10px;
-  flex-basis: 28%;
-  font-family: 'Roboto', sans-serif;
-  color: #707e95;
+td {
+  display: inline-flex;
+  padding: 0px 84px 20px 57px;
+  align-items: center;
 }
 
 .container-button {
@@ -180,10 +189,10 @@ nav bar
 }
 
 .rectangle-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #2b4ac7;
   border: 0;
-  margin-top: 17%;
+  margin: 9% 0% 0% 9%;
   padding: 15px 40px;
   border-radius: 5px;
   color: white;
@@ -204,11 +213,6 @@ nav bar
 
 /*sección why should i vaccine*/
 
-#reasons-vaccines {
-  width: 100%;
-  padding: 40px 100px;
-}
-
 #box-container {
   display: flex;
   justify-content: space-between;
@@ -228,24 +232,20 @@ nav bar
   margin: 5% 0 5% 0;
   color: #1f3e72;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-box {
   margin: 5% 0 5% 0;
   color: #707e95;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Preparations Before Vaccine*/
 
-.requeriments-vaccines {
-  display: flex;
-}
-#requeriments-info {
+.requeriments-info {
   order: 2;
-  width: 50%;
   margin-left: 50px;
 }
 
@@ -254,11 +254,6 @@ nav bar
   width: 50%;
 }
 
-#rectangle-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .rectangle {
   border-radius: 10px;
   padding-left: 2%;
@@ -273,9 +268,10 @@ nav bar
   font-size: 15px;
   padding-left: 35px;
   flex-basis: 89%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #707e95;
 }
+
 #rectangle-info {
   display: flex;
   flex-wrap: wrap;
@@ -294,7 +290,7 @@ nav bar
   margin-top: 1%;
   color: #707e95;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #selector-inv {
@@ -302,10 +298,6 @@ nav bar
 }
 
 /* sección Emergency contact*/
-
-.contacts {
-  display: flex;
-}
 
 .botton-grid {
   display: flex;
@@ -317,10 +309,6 @@ nav bar
   flex-wrap: wrap;
   border-radius: 10px;
   align-content: center;
-}
-
-.padding-space {
-  margin: 3%;
 }
 
 .container-svg {
@@ -338,7 +326,7 @@ nav bar
 }
 
 .box-botton-large {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f1f5ff;
   border: 0;
   margin-top: 10px;
@@ -363,7 +351,7 @@ nav bar
 }
 
 #box-botton-large-blue {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #2b4ac7;
   border: 0;
   margin-top: 10px;

@@ -14,12 +14,12 @@
   </head>
 
   <body>
-    <!--Inicio de container-->
+    <!--Inicio de container del nav-bar-->
     <div id="nav-bar">
       <!--Inicio de cabecera-->
       <header id="cabecero" class="margin width-100">
         <h1 class="logo"><a class="text-logo" href="./index.html">Vaccination</a></h1>
-
+        <!--Inicio de la nav-bar-->
         <nav id="menu">
           <ul>
             <li>
@@ -36,19 +36,24 @@
             </li>
           </ul>
         </nav>
+        <!--Fin de la nav-bar-->
+        <!--Inicio de botton-->
         <a class="box-botton" href="#">
           <input class="button" type="button" value="Hoax Buster" />
         </a>
+        <!--Fin de botton-->
+
       </header>
-      <!--Fin de la cabecera-->
+      <!--Fin de cabecera-->
     </div>
-    <!--Fin del container-->
+    <!--Fin del nav-bar-->
 
     <!--Inicio de container-->
-    <div id="img-inf">
+    <div class="layout-row">
       <img class="home-image" src="./assets/img/fondo.jpeg" alt="fondo de text" />
       <!--Inicio de container-->
-      <div id="info">
+      <div id="text-home-image">
+      
         <h1 class="title">
           Fight Virus <br />
           With Vaccines
@@ -78,7 +83,7 @@
               d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3"
             />
           </svg>
-          <p class="icon-text">Best protection</p>
+          <p>Best protection</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-star"
@@ -96,75 +101,94 @@
               d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
             />
           </svg>
-          <p class="icon-text">Selected Vaccines</p>
+          <p>Selected Vaccines</p>
         </div>
         <!--Fin de container-->
         <!--Inicio de container-->
         <div class="rectangle-box">
-          <div id="data-consult">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-map-pin"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#2b4ac7"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <circle cx="12" cy="11" r="3" />
-              <path
-                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-              />
-            </svg>
-            <p class="rectangle-icon-title">Location</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-map-pin"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#2b4ac7"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <circle cx="12" cy="11" r="3" />
-              <path
-                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-              />
-            </svg>
-            <p class="rectangle-icon-title">Date</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-map-pin"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#2b4ac7"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <circle cx="12" cy="11" r="3" />
-              <path
-                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-              />
-            </svg>
-            <p class="rectangle-icon-title">Vaccine Type</p>
-            <p class="rectangle-icon-text">Jakarta</p>
-            <p class="rectangle-icon-text">08 July 2021</p>
-            <p class="rectangle-icon-text">Moderna</p>
-          </div>
+          <table>
+            <tr>
+              <th>
+                <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="icon icon-tabler icon-tabler-map-pin"
+               width="20"
+               height="20"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="#2b4ac7"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+             >
+               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+               <circle cx="12" cy="11" r="3" />
+               <path
+                 d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+               />
+             </svg>
+             <p class="text-grey padding-l20 padding-r20">Location</p>
+             </th>
+             <th>
+               <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="icon icon-tabler icon-tabler-map-pin"
+               width="20"
+               height="20"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="#2b4ac7"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+             >
+               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+               <circle cx="12" cy="11" r="3" />
+               <path
+                 d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+               />
+             </svg>
+             <p class="text-grey padding-l20 padding-r20">Date</p>
+             </th>
+             <th>
+               <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="icon icon-tabler icon-tabler-map-pin"
+               width="20"
+               height="20"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="#2b4ac7"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+             >
+               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+               <circle cx="12" cy="11" r="3" />
+               <path
+                 d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+               />
+             </svg>
+             <p class="text-grey padding-l20">Vaccine Type</p>
+             </th>
+            </tr>
+           <tr>
+            <td>  
+              <p class="text-blue">Jakarta</p>
+            </td>
+            <td>
+              <p class="text-blue">08 July 2021</p>
+            </td>
+            <td>
+              <p class="text-blue">Moderna</p>
+
+            </td>
+           </tr>
+              
+          </table>
+        
           <div class="container-button">
-            <a class="box-botton" href="#">
+            <a  href="#">
               <input class="rectangle-button" type="button" value="Submit" />
             </a>
           </div>
@@ -188,7 +212,7 @@
             <circle cx="12" cy="12" r="9" />
             <polyline points="12 7 12 12 15 15" />
           </svg>
-          <p class="icon-text">Schedule your vaccinations</p>
+          <p class="text-info-table padding-l20">Schedule your vaccinations</p>
         </div>
         <!--Fin de container-->
       </div>
@@ -200,7 +224,7 @@
       />
     </div>
 
-    <!--Inicio de container-->
+    <!--Inicio de sección con logos-->
     <div class="container-vaccines margin">
       <img
         class="logo-vaccines"
@@ -223,7 +247,7 @@
         alt="Logo de Moderna"
       />
     </div>
-    <!--Fin del container-->
+    <!--Fin sección con logos-->
 
     <!--Inicio de container-->
     <div class="margin">
@@ -320,8 +344,8 @@
     <!--Fin del container-->
 
     <!--Inicio de container-->
-    <div class="requeriments-vaccines margin">
-      <div id="requeriments-info">
+    <div class="layout-row margin">
+      <div class="requeriments-info width-50">
         <h2 class="title">Preparations Before Vaccine</h2>
       <p class="text-big">
         The success of vaccines is strongly influenced by the
@@ -411,7 +435,7 @@
     <!--Fin del container-->
 
     <!--Inicio de container-->
-    <div class="contacts margin">
+    <div class="layout-row margin">
       <div class="cont-text">
         <h2 class="title">Emergency Contact</h2>
       <p class="text-big">
@@ -429,9 +453,9 @@
               <line x1="8" y1="12" x2="8" y2="12.01" />
               <line x1="16" y1="12" x2="16" y2="12.01" />
             </svg>
-            <div class="svg-text">
-              <h3 class="padding-space title-box">Call</h3>
-              <p class="padding-space text-box">021.123.145.14</p>
+            <div class="padding-l20">
+              <h3 class="margin-g title-box">Call</h3>
+              <p class="margin-g text-box">021.123.145.14</p>
             </div>
             <a href="#">
               <input class="box-botton-large" type="button" value="Call Now" />
@@ -445,8 +469,8 @@
               <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
             </svg>
             <div class="svg-text">
-              <h3 class="padding-space title-box">Chat</h3>
-              <p class="padding-space text-box">021.123.145.14</p>
+              <h3 class="margin-g title-box">Chat</h3>
+              <p class="margin-g text-box">021.123.145.14</p>
             </div>
             <a href="#">
               <input id="box-botton-large-blue" type="button" value="Chat Now" />
@@ -465,8 +489,8 @@
               <rect x="3" y="6" width="12" height="12" rx="2" />
             </svg>
             <div class="svg-text">
-              <h3 class="padding-space title-box">Video Call</h3>
-              <p class="padding-space text-box">021.123.145.14</p>
+              <h3 class="margin-g title-box">Video Call</h3>
+              <p class="margin-g text-box">021.123.145.14</p>
             </div>
             <a href="#">
               <input class="box-botton-large" type="button" value="Video Call Now" />
@@ -482,8 +506,8 @@
               <line x1="8" y1="13" x2="14" y2="13" />
             </svg>
             <div class="svg-text">
-              <h3 class="padding-space title-box">Message</h3>
-              <p class="padding-space text-box">021.123.145.14</p>
+              <h3 class="margin-g title-box">Message</h3>
+              <p class="margin-g text-box">021.123.145.14</p>
             </div>
             <a href="#">
               <input class="box-botton-large" type="button" value="Message Now" />
@@ -510,7 +534,7 @@
             ongoing pandemic <br/>
             
           </p>
-          <p class=" text margin-top"> &copy; 2021 Vaccination. All rights</p>
+          <p class=" text-grey margin-top"> &copy; 2021 Vaccination. All rights</p>
 
         </div>
         
@@ -572,9 +596,9 @@
     
             </div>
           </div>
-          <div class="terms">
-            <p class="text-big margin-right">Terms & Agreements</p>
-            <p class="text-big">Privacy Policy</p>
+          <div class=" terms">
+            <p class="text-grey margin-right">Terms & Agreements</p>
+            <p class="text-grey">Privacy Policy</p>
           </div>
         </div>
       </footer>
