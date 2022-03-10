@@ -142,10 +142,10 @@ nav bar
 
 .icon-container {
   display: flex;
-  justify-content: space-around;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   color: #1f3e72;
+  align-items: center;
 }
 
 .icon-container-down {
@@ -302,7 +302,7 @@ td {
 .botton-grid {
   display: flex;
   margin-top: 50%;
-  margin-right: 15%;
+  margin-right: 20%;
   box-shadow: 2px 2px 5px rgb(31 62 114 / 22%);
   padding: 20px 20px 20px 20px;
   flex-direction: column;
